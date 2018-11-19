@@ -1,5 +1,6 @@
 # Reversi game in VueJS
-Project was built with Vue CLI 3.
+
+Demo:
 
 [https://pfrohner.github.io/vue-reversi/](https://pfrohner.github.io/vue-reversi/)
 
@@ -26,11 +27,6 @@ npm run test
 ### Lints and fixes files
 ```
 npm run lint
-```
-
-### Run your unit tests
-```
-npm run test:unit
 ```
 
 ### Customize configuration
