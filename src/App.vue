@@ -20,19 +20,19 @@ export default {
 }
 
 .button {
-	display: inline-block;
+  display: inline-block;
   margin: 0;
   padding: 0.75rem 1rem;
-	border: 0;
-	border-radius: 0.5rem;
-	background-color: #aaa;
-	color: #fff;
-	font-weight: 700;
-	font-size: 1rem;
+  border: 0;
+  border-radius: 0.5rem;
+  background-color: #aaa;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
   line-height: 1.5;
   outline: none;
-	cursor: pointer;
-	-webkit-appearance: none;
-	-webkit-font-smoothing: antialiased;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -webkit-font-smoothing: antialiased;
 }
 </style>

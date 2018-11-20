@@ -15,7 +15,7 @@
       </div>
       <div v-if="gameIsOver">
         <p v-if="isTie">It's a tie!</p>
-        <p v-else>Game over, winner is: {{ winner === 1 ? 'white' : 'black' }}</p>
+        <p v-else>Game over, winner is: <strong>{{ winner === 1 ? 'white' : 'black' }}</strong></p>
         <button
           class="button"
           @click="startGame"
@@ -38,7 +38,6 @@ export default {
   },
   computed: {
     ...mapGetters([
-      'currentColor',
       'playerCanPlay',
       'gameIsOver',
       'winner',
