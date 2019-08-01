@@ -11,7 +11,7 @@ export const endTurn = ({ commit }) => {
 export const play = ({ commit, getters }, position) => {
   if (getters.isTilePlayable(position)) {
     // switch all the coins related to position
-    commit(types.SWITCH_COINS, [position, ...getters.availableMoves[position.x][position.y]])
+    commit(types.FLIP_COINS, [position, ...getters.availableMoves[position.x][position.y]])
     // and end the turn
     commit(types.END_TURN)
   }

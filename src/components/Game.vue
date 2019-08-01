@@ -3,7 +3,10 @@
     <div class="board-wrapper">
       <board />
     </div>
-    <div class="info">
+    <div
+      v-if="!playerCanPlay && !gameIsOver || gameIsOver"
+      class="info"
+    >
       <div v-if="!playerCanPlay && !gameIsOver">
         <p>No available moves</p>
         <button
@@ -15,7 +18,7 @@
       </div>
       <div v-if="gameIsOver">
         <p v-if="isTie">It's a tie!</p>
-        <p v-else>Game over, winner is: <strong>{{ winner === 1 ? 'white' : 'black' }}</strong></p>
+        <p v-else>Game over, <strong>{{ winner === 1 ? 'white' : 'black' }} won!</strong></p>
         <button
           class="button"
           @click="startGame"
@@ -58,7 +61,22 @@ export default {
 
 <style lang="scss" scoped>
 .game {
+  position: absolute;
   display: block;
   margin: 0 auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.info {
+  position: absolute;
+  min-width: 150px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 5px 6px 10px #000;
 }
 </style>

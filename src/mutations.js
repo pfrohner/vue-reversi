@@ -39,7 +39,7 @@ export default {
     state.gameState = GameStates.FINISHED
   },
 
-  [ActionTypes.SWITCH_COINS](state, tiles) {
+  [ActionTypes.FLIP_COINS](state, tiles) {
     tiles.forEach(tile => setTile(state, tile, state.currentTurn))
   }
 }

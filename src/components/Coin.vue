@@ -45,7 +45,7 @@
 
   &.hint {
     transition: opacity 100ms ease;
-    opacity: 0.1;
+    opacity: 0;
 
     &:hover {
       opacity: 0.5;

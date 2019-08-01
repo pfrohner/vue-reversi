@@ -25,8 +25,8 @@ export default {
   padding: 0.75rem 1rem;
   border: 0;
   border-radius: 0.5rem;
-  background-color: #aaa;
-  color: #fff;
+  background-color: #a2a2a2;
+  color: #efefef;
   font-weight: 700;
   font-size: 1rem;
   line-height: 1.5;
